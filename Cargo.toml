@@ -1,0 +1,14 @@
+[package]
+name = "htpasswd"
+version = "1.0.0"
+authors = ["Baptiste Darthenay <baptiste@darthenay.fr>"]
+
+[dependencies]
+rust-crypto = "^0.2"
+
+[dependencies.clap]
+version = "2"
+default-features = false
+
+# Cherry-pick the features you'd like to use
+features = [ "unstable", "color" ]
